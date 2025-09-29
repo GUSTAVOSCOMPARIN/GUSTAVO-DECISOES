@@ -1,0 +1,554 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/GUSTAVOSCOMPARIN/GUSTAVO-DECISOES/blob/main/GUSTAVO%20PYTHON\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **AULA 1**"
+      ],
+      "metadata": {
+        "id": "cXxDuR8Sks5H"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vjRojvX9jWW5",
+        "outputId": "1093b356-35b4-4283-c9b6-9665a3dda048"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I Competição de Programação da Start\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"I Competição de Programação da Start\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ano = \"II\"\n",
+        "\n",
+        "print(ano,\"Competição de Programação da Start\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G8YG0Km5j6Ha",
+        "outputId": "666aad9a-0e28-4756-f98a-f27b974a8fe6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "II Competição de Programação da Start\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"{ano}, Competição de Programação da Start\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fs8qBWE8kTfj",
+        "outputId": "7889db24-182c-425f-881e-660817de3f91"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "II, Competição de Programação da Start\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **AULA 2**"
+      ],
+      "metadata": {
+        "id": "PHIKX9OXlC5U"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Uma escola está promovendo uma campanha de incentivo à leitura, em que cada estudante recebe pontos ao concluir livros. Esses pontos podem ser trocados por diferentes prêmios da escola, e as categorias de livros têm valores diferntes de pontos:\n",
+        "\n",
+        "Ficção: 8 pontos;\n",
+        "Não ficção: 8 ponto;\n",
+        "Infantis: 6 pontos.\n",
+        "\n",
+        "*   Ficção: 8 pontos;\n",
+        "*   Não ficção: 8 ponto;\n",
+        "*   Infantis: 6 pontos.\n",
+        "\n",
+        "Rodrigo, um estudante dessa escola, leu um livro de cada categoria e, agora, quer saber quantos pontos acumulou com sua leitura. Para isso, você deve criar um programa em Python que tenha as seguintes características:\n",
+        "\n",
+        "Consiga armazenar os pontos de cada categoria de livro;\n",
+        "\n",
+        "* Consiga armazenar os pontos de cada categoria de livro;\n",
+        "*   Calcule os pontos de Rodrigo;\n",
+        "*   Apresente na tela os pontos de Rodrigo.\n"
+      ],
+      "metadata": {
+        "id": "PCHrxuBmlu2F"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "livro_ficcao = 8\n",
+        "livro_n_ficcao = 10\n",
+        "livro_infantil = 6\n",
+        "\n",
+        "pontos_rodrigo = livro_ficcao + livro_n_ficcao + livro_infantil\n",
+        "\n",
+        "print(f\"Os pontos totais do Rodrigo são {pontos_rodrigo}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hP7cBIm-mOsP",
+        "outputId": "fcb593df-21f4-41aa-d180-600d1f86c35d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Os pontos totais do Rodrigo são 24\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **AULA 3**"
+      ],
+      "metadata": {
+        "id": "9_w4RN5inCCZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "A turma do 2º ano encontrou um envelope cheio de figurinhas. Para garantir uma divisão justa, todos concordaram com a sugestão de João, o dono do envelope:\n",
+        "Cada amigo, exceto João, deve receber exatamente o mesmo número de figurinhas. João deve receber o dobro da quantidade que cada amigo recebe. Pode ser que o fato de João ser o dono do envelope tenha ajudado a convencer os amigos, mas também contribuiu o fato de que, do jeito proposto, a divisão era exata, sem sobrar nem faltar figurinhas.\n",
+        "\n",
+        "**Problema:**\n",
+        "\n",
+        "Crie um programa que determine a quantidade de figurinhas que João recebeu, dado o número total de figurinhas no envelope e o número de amigos de João.\n",
+        "\n",
+        "**Entrada:**\n",
+        "\n",
+        "*   A primeira linha contém um número inteiro total_figurinhas, que representa o número de figurinhas no envelope.\n",
+        "*   A segunda linia contém um número inteiro numero_amigos, que representa a quantidade de amigos de João (excluindo o próprio João).\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "PjQfYw87nGpQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "total_de_figurinhas = int(input(\"Digite o total de figurinhas: \"))\n",
+        "numero_de_amigos = int(input(\"Digite o número de amigos: \"))\n",
+        "\n",
+        "figurinhas_amigo = total_de_figurinhas // (numero_de_amigos + 2)\n",
+        "figurinhas_joao = 2 * figurinhas_amigo\n",
+        "\n",
+        "\n",
+        "print(f\"João recebeu {figurinhas_joao} figurinhas\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 356
+        },
+        "id": "g2A7OcpwnVF5",
+        "outputId": "3c3ec2d9-4b98-444f-d761-2cdf70c2f8e9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "Interrupted by user",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-2005903587.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mtotal_de_figurinhas\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Digite o total de figurinhas: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mnumero_de_amigos\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Digite o número de amigos: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mfigurinhas_amigo\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mtotal_de_figurinhas\u001b[0m \u001b[0;34m//\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mnumero_de_amigos\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mfigurinhas_joao\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;36m2\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0mfigurinhas_amigo\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m   1175\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1176\u001b[0m             )\n\u001b[0;32m-> 1177\u001b[0;31m         return self._input_request(\n\u001b[0m\u001b[1;32m   1178\u001b[0m             \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1179\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"shell\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m   1217\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1218\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1219\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1220\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1221\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **AULA 4**"
+      ],
+      "metadata": {
+        "id": "5dpZWVDKo2SZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "A turma de um colégio está organizando uma excursão para a serra e, para chegar ao pico da montanha, todos os alunos e monitores devem usar um bondinho. No entanto, a cabine do bondinho tem uma capacidade máxima de 50 pessoas por viagem.\n",
+        "Você precisa criar um programa que verifique se todos os alunos e monitores podem ser transportados em apenas uma viagem.\n",
+        "\n",
+        "**Entrada:**\n",
+        "\n",
+        "*   Um número inteiro numero_alunos, representando a quantidade de alunos na excursão.\n",
+        "*   Um número inteiro numero_monitores, representando a quantidade de monitores na excursão.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "xnDimKGtpCOd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero_de_alunos = int(input(\"Digite a quantidade de alunos: \"))\n",
+        "numero_de_monitores = int(input(\"Digite a quantidade de monitores: \"))\n",
+        "resposta_positiva = \"pode ir\"\n",
+        "resposta_negativa = \"não pode ir\"\n",
+        "\n",
+        "\n",
+        "if numero_de_alunos + numero_de_monitores <= 50:\n",
+        " print(resposta_positiva)\n",
+        "else:\n",
+        " print(resposta_negativa)"
+      ],
+      "metadata": {
+        "id": "itwB0XBHpteF"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **AULA 5**"
+      ],
+      "metadata": {
+        "id": "B1Hs-gXFqhzg"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Fliper é um jogo em que uma bolinha de metal cai por um labirinto até chegar à parte de baixo. O jogador ganha pontos dependendo do caminho que a bolinha percorre. Ele pode controlar o trajeto da bolinha movendo algumas portinhas no labirinto. Cada portinha pode estar em duas posições: 0 (virada para a esquerda) ou 1 (virada para a direita).\n",
+        "No flíper mostrado na imagem, há duas portinhas. A portinha P está na posição 1 (virada para a direita) e a portinha R está na posição 0 (virada para a esquerda). Isso faz com que a bolinha caia no caminho B.\n",
+        "O programa que você deve escrever precisa, dado o valor das posições de Pe R, informar por qual dos três caminhos (A, B ou C) a bolinha vai cair.\n",
+        "\n",
+        "**Entrada:**\n",
+        "\n",
+        "As entradas correspondem a um valor inteiro P (0 ou 1) e um valor inteiro R (0 ou 1) que indicam as posições das portinhas do flíper.\n",
+        "\n",
+        "![aula05_FCF-01.png](data:image/png;base64,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)"
+      ],
+      "metadata": {
+        "id": "y32Mu1wQqloQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "P = int(input(\"Digite a posição da porta P (0 ou 1): \"))\n",
+        "R = int(input(\"Digite a posição da porta R (0 ou 1): \"))\n",
+        "\n",
+        "if P == 0 and R == 0:\n",
+        "    print(\"C\")\n",
+        "elif P == 0 and R == 1:\n",
+        "    print(\"C\")\n",
+        "elif P == 1 and R == 1:\n",
+        "    print(\"A\")\n",
+        "else:\n",
+        "    print(\"B\")\n"
+      ],
+      "metadata": {
+        "id": "S3s26gmUrHfx"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **AULA 6**"
+      ],
+      "metadata": {
+        "id": "PUfiLuiusn-1"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Dona Mônica é mãe de três filhos com idades diferentes. Este ano, a soma das idades de seus três filhos é igual à idade dela.\n",
+        "Você deve escrever um programa que, dada a idade de Dona Mônica e as idades conhecidas de dois de seus filhos, determine a idade do terceiro filho e identifique quem é o mais velho.\n",
+        "\n",
+        "**Entrada**\n",
+        "\n",
+        "*   Um número inteiro idade_monica representando a idade de Dona Mônica\n",
+        "*   Um número inteiro idade_filhol representando a idade de um dos filhos.\n",
+        "*   Um número inteiro idade_filho2 representando a idade de outro filho.\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "UdpUE-8sssD8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calcula_idade_maior(idade_monica, idade_filho1, idade_filho2):\n",
+        "    # calcula a idade do terceiro filho\n",
+        "    idade_filho3 = idade_monica - (idade_filho1 + idade_filho2)\n",
+        "\n",
+        "    # descobre qual é a maior idade entre os filhos\n",
+        "    idade_maxima = max(idade_filho1, idade_filho2, idade_filho3)\n",
+        "\n",
+        "    return idade_filho3, idade_maxima\n",
+        "\n",
+        "# exemplo de uso\n",
+        "print(calcula_idade_maior(68, 12, 30))\n"
+      ],
+      "metadata": {
+        "id": "_4VFLGtjyGJ4",
+        "outputId": "801522cf-60e8-4c1a-b0fa-3c3ba1d8f75f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(26, 30)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **AULA 7**"
+      ],
+      "metadata": {
+        "id": "12KMYDzByWBx"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Contexto**\n",
+        "\n",
+        "A tabuada é uma ferramenta importante para facilitar a multiplicação de números. Em vez de fazer as contas manualmente, podemos criar um programa que mostre a tabuada de qualquer número de forma rápida e prática.\n",
+        "Para isso, vamos usar um programa de computador, que ao receber um número, mostra a tabuada dele, ou seja, o resultado das multiplicações desse número com os números de 1 a 10.\n",
+        "\n",
+        "**Problema**\n",
+        "\n",
+        "Agora, precisamos criar um programa em Python que peça um número e mostre a tabuada desse número. O programa deve calcular as multiplicações do número digitado por 1, 2, 3, até 10, e mostrar o resultado de cada uma dessas multiplicações."
+      ],
+      "metadata": {
+        "id": "9xALLKG0yaTY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calcula_tabuada(numero):\n",
+        "    for valor in range(1, 11):\n",
+        "        print(f\"{numero} x {valor} = {numero * valor}\")\n",
+        "\n",
+        "# exemplo de uso\n",
+        "calcula_tabuada(23)\n"
+      ],
+      "metadata": {
+        "id": "gau6odj8yqJx",
+        "outputId": "fae8fa92-8857-4544-f3c7-172655d2fb9d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "23 x 1 = 23\n",
+            "23 x 2 = 46\n",
+            "23 x 3 = 69\n",
+            "23 x 4 = 92\n",
+            "23 x 5 = 115\n",
+            "23 x 6 = 138\n",
+            "23 x 7 = 161\n",
+            "23 x 8 = 184\n",
+            "23 x 9 = 207\n",
+            "23 x 10 = 230\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **MEU DESAFIO**"
+      ],
+      "metadata": {
+        "id": "rsjiFXOwzjKJ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Desafio: Sistema de Reserva de Assentos em um Cinema 🎬**\n",
+        "\n",
+        "Imagine que você está desenvolvendo um sistema simples de controle de reservas para um cinema. O programa deverá gerenciar os assentos disponíveis em uma sala e permitir que usuários façam ou cancelem reservas.\n",
+        "\n",
+        "**Entrada:**\n",
+        "\n",
+        "Quantidade de assentos disponíveis na sala (número total).\n",
+        "\n",
+        "*  Quantidade de assentos disponíveis na sala (número total).\n",
+        "*   Comandos do usuário:\n",
+        "*   **Reservar** um assento específico (informando o número do assento).\n",
+        "*   **Cancelar** a reserva de um assento.\n",
+        "*   **Listar** todos os assentos mostrando quais estão livres e quais estão ocupados.\n",
+        "\n",
+        "Saída esperada:\n",
+        "\n",
+        "*   Mensagem confirmando a reserva ou o cancelamento.\n",
+        "*   Mensagem de erro se o usuário tentar:\n",
+        "*   Reservar um assento já ocupado.\n",
+        "*   Cancelar um assento que já está livre.\n",
+        "*   Exibição da lista atualizada dos assentos após cada operação.\n"
+      ],
+      "metadata": {
+        "id": "jHuF1PmXzm37"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sistema_cinema():\n",
+        "    total_assentos = int(input(\"Digite a quantidade de assentos da sala: \"))\n",
+        "\n",
+        "    # False = livre | True = ocupado\n",
+        "    assentos = [False] * total_assentos\n",
+        "\n",
+        "    while True:\n",
+        "        print(\"\\n=== MENU ===\")\n",
+        "        print(\"1 - Reservar assento\")\n",
+        "        print(\"2 - Cancelar reserva\")\n",
+        "        print(\"3 - Listar assentos\")\n",
+        "        print(\"4 - Sair\")\n",
+        "\n",
+        "        opcao = input(\"Escolha uma opção: \")\n",
+        "\n",
+        "        if opcao == \"1\":\n",
+        "            numero = int(input(\"Digite o número do assento que deseja reservar (1 até {}): \".format(total_assentos)))\n",
+        "            if numero < 1 or numero > total_assentos:\n",
+        "                print(\"❌ Assento inválido.\")\n",
+        "            elif assentos[numero - 1]:\n",
+        "                print(\"❌ Esse assento já está ocupado.\")\n",
+        "            else:\n",
+        "                assentos[numero - 1] = True\n",
+        "                print(f\"✅ Assento {numero} reservado com sucesso.\")\n",
+        "\n",
+        "        elif opcao == \"2\":\n",
+        "            numero = int(input(\"Digite o número do assento que deseja cancelar (1 até {}): \".format(total_assentos)))\n",
+        "            if numero < 1 or numero > total_assentos:\n",
+        "                print(\"❌ Assento inválido.\")\n",
+        "            elif not assentos[numero - 1]:\n",
+        "                print(\"❌ Esse assento já está livre.\")\n",
+        "            else:\n",
+        "                assentos[numero - 1] = False\n",
+        "                print(f\"✅ Reserva do assento {numero} cancelada com sucesso.\")\n",
+        "\n",
+        "        elif opcao == \"3\":\n",
+        "            print(\"\\n📋 Situação dos assentos:\")\n",
+        "            for i in range(total_assentos):\n",
+        "                status = \"Ocupado\" if assentos[i] else \"Livre\"\n",
+        "                print(f\"Assento {i+1}: {status}\")\n",
+        "\n",
+        "        elif opcao == \"4\":\n",
+        "            print(\"👋 Saindo do sistema. Até logo!\")\n",
+        "            break\n",
+        "\n",
+        "        else:\n",
+        "            print(\"❌ Opção inválida. Tente novamente.\")\n",
+        "\n",
+        "# Executar o programa\n",
+        "sistema_cinema()\n"
+      ],
+      "metadata": {
+        "id": "XwVXMcmh0ast"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
